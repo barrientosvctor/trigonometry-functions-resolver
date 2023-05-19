@@ -1,0 +1,21 @@
+{
+  "name": "trigonometry-functions-resolver",
+  "version": "1.0.0",
+  "description": "Web to automate trigonometry functions answers.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "npx http-server -p 3000"
+  },
+  "keywords": [],
+  "author": "Victor",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "4.18.2",
+    "http-server": "14.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.22"
+  }
+}
