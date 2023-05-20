@@ -1,4 +1,5 @@
-import { seno, coseno, secante, cosecante, tangente, cotangente } from "./functions.js";
+import { sen, cos, sec, csc, tan, cot } from "./functions.js";
+import { ResultBuilder } from "./ResultBuilder.js";
 
 const dataForm = document.querySelector("#dataForm");
 
@@ -27,16 +28,20 @@ function showResults(ca, co, h) {
   <h2>Error</h2>
   Asegurate de que los campos tienen números.
   `;
-  else htmlResult = `
+  else {
+    const builder = new ResultBuilder(ca, co, h);
+
+    htmlResult = `
   <h2>Results</h2>
   <ul>
-    <li>sen(x) = ${seno(co, h)}</li>
-    <li>cos(x) = ${coseno(ca, h)}</li>
-    <li>sec(x) = ${secante(h, ca)}</li>
-    <li>csc(x) = ${cosecante(h, co)}</li>
-    <li>tan(x) = ${tangente(co, ca)}</li>
-    <li>cot(x) = ${cotangente(ca, co)}</li>
+    <li>${builder.showResult(sen)}</li>
+    <li>${builder.showResult(cos)}</li>
+    <li>${builder.showResult(sec)}</li>
+    <li>${builder.showResult(csc)}</li>
+    <li>${builder.showResult(tan)}</li>
+    <li>${builder.showResult(cot)}</li>
   </ul>`;
+  }
 
   resultField.innerHTML = htmlResult;
 }
