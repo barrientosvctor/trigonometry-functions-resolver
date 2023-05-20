@@ -25,7 +25,7 @@ export function coseno(ca, h) {
  * @returns
  */
 export function secante(h, ca) {
-  return `${h}/${ca} = ${h/ca}}`;
+  return `${h}/${ca} = ${h/ca}`;
 }
 
 /**
