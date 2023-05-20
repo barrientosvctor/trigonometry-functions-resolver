@@ -4,8 +4,8 @@
  * @param {number} h
  * @returns
  */
-export function seno(co, h) {
-  return `${co}/${h} = ${co/h}`;
+export function sen(co, h) {
+  return co / h;
 }
 
 /**
@@ -14,8 +14,8 @@ export function seno(co, h) {
  * @param {number} h
  * @returns
  */
-export function coseno(ca, h) {
-  return `${ca}/${h} = ${ca/h}`;
+export function cos(ca, h) {
+  return ca / h;
 }
 
 /**
@@ -24,8 +24,8 @@ export function coseno(ca, h) {
  * @param {number} ca
  * @returns
  */
-export function secante(h, ca) {
-  return `${h}/${ca} = ${h/ca}`;
+export function sec(h, ca) {
+  return h / ca;
 }
 
 /**
@@ -34,8 +34,8 @@ export function secante(h, ca) {
  * @param {number} co
  * @returns
  */
-export function cosecante(h, co) {
-  return `${h}/${co} = ${h/co}`;
+export function csc(h, co) {
+  return h / co;
 }
 
 /**
@@ -44,8 +44,8 @@ export function cosecante(h, co) {
  * @param {number} ca
  * @returns
  */
-export function tangente(co, ca) {
-  return `${co}/${ca} = ${co/ca}`;
+export function tan(co, ca) {
+  return co / ca;
 }
 
 /**
@@ -54,6 +54,6 @@ export function tangente(co, ca) {
  * @param {number} co
  * @returns
  */
-export function cotangente(ca, co) {
-  return `${ca}/${co} = ${ca/co}`;
+export function cot(ca, co) {
+  return ca / co;
 }
