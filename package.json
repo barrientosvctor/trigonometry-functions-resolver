@@ -1,6 +1,6 @@
 {
   "name": "trigonometry-functions-resolver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple web to automate trigonometry functions answers.",
   "main": "index.js",
   "type": "module",
