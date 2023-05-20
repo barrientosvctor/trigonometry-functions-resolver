@@ -20,22 +20,23 @@ function checkValues(ca, co, h) {
 
 function showResults(ca, co, h) {
   const resultField = document.querySelector("div.results");
-  const isNumber = checkValues(ca, co, h);
+  const isNotNumber = checkValues(ca, co, h);
   let htmlResult;
 
-  if (isNumber === true) htmlResult = `
+  if (isNotNumber === true) htmlResult = `
   <h2>Error</h2>
   Asegurate de que los campos tienen números.
-  `
+  `;
   else htmlResult = `
   <h2>Resultados</h2>
-  seno(x) = ${seno(co, h)}
-  coseno(x) = ${coseno(ca, h)}
-  secante(x) = ${secante(h, ca)}
-  cosecante(x) = ${cosecante(h, co)}
-  tangente(x) = ${tangente(co, ca)}
-  cotangente(x) = ${cotangente(ca, co)}
-  `
+  <ul>
+    <li>seno(x) = ${seno(co, h)}</li>
+    <li>coseno(x) = ${coseno(ca, h)}</li>
+    <li>secante(x) = ${secante(h, ca)}</li>
+    <li>cosecante(x) = ${cosecante(h, co)}</li>
+    <li>tangente(x) = ${tangente(co, ca)}</li>
+    <li>cotangente(x) = ${cotangente(ca, co)}</li>
+  </ul>`;
 
   resultField.innerHTML = htmlResult;
 }

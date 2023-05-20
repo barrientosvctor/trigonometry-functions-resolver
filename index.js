@@ -1,11 +1,12 @@
 import express from "express";
-import cors from "cors";
 
 const app = express();
 
-app.get("/", cors(), (req, res) => {
-  res.sendFile(`${process.cwd()}/index.html`);
+app.use("/static", express.static("./static/"));
+
+app.get("/", (_, res) => {
+  res.sendFile(`${process.cwd()}/static/index.html`);
 });
 
 app.listen(4000);
-console.log("Escuchando el puerto", 4000);
+console.log("Listening on port:", 4000);
