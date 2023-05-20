@@ -1,22 +1,12 @@
 # trigonometry-functions-resolver
-Web to automate trigonometry functions answers.
+A simple web to automate trigonometry functions answers.
 
 ## Requeriments
 * [Node.js](https://nodejs.org/en)
 
-## Ways to run the web
+## Run server
 
-### Way 1
-
-Run these commands:
-```
-$ npm i
-$ npm run server
-```
-
-### Way 2
-
-Run these commands:
+Type these commands:
 ```
 $ npm i
 $ node .
@@ -27,3 +17,8 @@ or
 ```
 $ npm i
 $ npm run start
+```
+
+Now, go to the browser of you choice and type the following url: `http://localhost:4000`
+
+> Enjoy :)
