@@ -28,14 +28,14 @@ function showResults(ca, co, h) {
   Asegurate de que los campos tienen números.
   `;
   else htmlResult = `
-  <h2>Resultados</h2>
+  <h2>Results</h2>
   <ul>
-    <li>seno(x) = ${seno(co, h)}</li>
-    <li>coseno(x) = ${coseno(ca, h)}</li>
-    <li>secante(x) = ${secante(h, ca)}</li>
-    <li>cosecante(x) = ${cosecante(h, co)}</li>
-    <li>tangente(x) = ${tangente(co, ca)}</li>
-    <li>cotangente(x) = ${cotangente(ca, co)}</li>
+    <li>sen(x) = ${seno(co, h)}</li>
+    <li>cos(x) = ${coseno(ca, h)}</li>
+    <li>sec(x) = ${secante(h, ca)}</li>
+    <li>csc(x) = ${cosecante(h, co)}</li>
+    <li>tan(x) = ${tangente(co, ca)}</li>
+    <li>cot(x) = ${cotangente(ca, co)}</li>
   </ul>`;
 
   resultField.innerHTML = htmlResult;
